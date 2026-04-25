@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Таро | Имя</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      color: #aaa;
+    }
+    .btn {
+      display: block;
+      margin: 15px auto;
+      padding: 12px;
+      width: 250px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+    .btn:hover {
+      background: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Таро и прогнозы</h1>
+  <p>Разборы, которые не всегда приятно слышать, но всегда полезно знать</p>
+
+  <a class="btn" href="#">Записаться на расклад</a>
+  <a class="btn" href="#">Telegram</a>
+  <a class="btn" href="#">Instagram</a>
+
+</body>
+</html>
