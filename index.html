@@ -2,74 +2,84 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Таролог | Мария Карт</title>
+<title>Таро | Мари</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
-  background: #191970;
-  color: #FFF8DC;
   font-family: 'Inter', sans-serif;
-  line-height: 1.6;
+  background: radial-gradient(circle at top, #1a0033, #050505);
+  color: #eaeaea;
 }
 
 .container {
-  max-width: 700px;
+  max-width: 900px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
 h1 {
   font-size: 42px;
-  font-weight: 600;
   margin-bottom: 10px;
 }
 
-.subtitle {
-  color: #F4A460;
-  margin-bottom: 40px;
+h2 {
+  margin-bottom: 20px;
 }
 
-.block {
-  margin-bottom: 60px;
+p {
+  color: #aaa;
+}
+
+.card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,215,0,0.2);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.price {
+  font-size: 28px;
+  margin: 10px 0;
+  color: gold;
 }
 
 .btn {
   display: block;
-  padding: 16px;
-  margin-top: 15px;
   text-align: center;
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 12px;
   text-decoration: none;
   color: #fff;
-  border: 1px solid #444;
-  border-radius: 12px;
+  border: 1px solid gold;
   transition: 0.3s;
 }
 
 .btn:hover {
-  border-color: #fff;
-  background: #fff;
-  color: #000;
+  background: gold;
+  color: black;
 }
 
-.image {
-  width: 140px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  opacity: 0.9;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media(max-width:700px){
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .small {
   font-size: 14px;
   color: #777;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #222;
-  margin: 40px 0;
 }
 </style>
 </head>
@@ -78,63 +88,62 @@ hr {
 
 <div class="container">
 
-  <!-- БЛОК 1: ВХОД -->
-  <div class="block">
-    <img class="image" src="https://allwebs.ru/image/652A921.rV965R">
+  <!-- ВХОД -->
+  <div class="card">
     <h1>Таро без иллюзий</h1>
-    <p class="subtitle">Я не успокаиваю. Я показываю, что происходит и куда это идет.</p>
+    <p>Я не даю надежду. Я показываю, что происходит и к чему это приведёт.</p>
 
-    <a class="btn" href="https://t.me/pani_tarolog">Написать в Telegram</a>
+    <a class="btn" href="https://t.me/твойдник">Написать</a>
   </div>
 
-  <hr>
-
-  <!-- БЛОК 2: УДЕРЖАНИЕ -->
-  <div class="block">
-    <p>Если вы здесь — значит, ситуация уже назрела.</p>
+  <!-- ПРОГРЕВ -->
+  <div class="card">
     <p>Обычно ко мне приходят, когда:</p>
-
     <p class="small">
-    — он\она ведет себя странно<br>
-    — все вроде нормально, но внутри гложет<br>
-    — нужно принять решение, но нет ясности<br>
-    — чувствуешь, что что-то не так, но не можешь назвать
+    — отношения непонятны<br>
+    — есть тревога без причины<br>
+    — нужно принять решение<br>
+    — чувствуешь, что что-то не так
     </p>
   </div>
 
-  <hr>
+  <!-- УСЛУГИ -->
+  <h2>Консультации</h2>
 
-  <!-- БЛОК 3: ПРО МЕНЯ -->
-  <div class="block">
-    <p>Я не даю сказки.</p>
-    <p>Иногда после разбора становится неприятно.</p>
-    <p>Но зато появляется контроль и понимание, что делать дальше.</p>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Диагностика отношений</h3>
+      <div class="price">1500 ₽</div>
+      <p class="small">Что происходит, перспективы, скрытые факторы</p>
+    </div>
+
+    <div class="card">
+      <h3>Личная ситуация</h3>
+      <div class="price">1500 ₽</div>
+      <p class="small">Разбор любой сферы жизни</p>
+    </div>
+
+    <div class="card">
+      <h3>Карьера и деньги</h3>
+      <div class="price">1500 ₽</div>
+      <p class="small">Финансы, работа, рост</p>
+    </div>
+
+    <div class="card">
+      <h3>Негатив</h3>
+      <div class="price">1800 ₽</div>
+      <p class="small">Порчи, блоки, причины состояния</p>
+    </div>
+
   </div>
 
-  <hr>
+  <!-- ДОЖИМ -->
+  <div class="card">
+    <p>После разбора становится не всегда приятно.</p>
+    <p>Но появляется ясность и контроль.</p>
 
-  <!-- БЛОК 4: УСИЛЕНИЕ -->
-  <div class="block">
-    <p>Разбор — это не “что он думает”.</p>
-    <p>Это:</p>
-
-    <p class="small">
-    — что происходит на самом деле<br>
-    — куда это идет<br>
-    — где ты теряешь позицию<br>
-    — и как это изменить
-    </p>
-  </div>
-
-  <hr>
-
-  <!-- БЛОК 5: CTA -->
-  <div class="block">
-    <p>Если тебе нужна ясность — ты уже знаешь, что делать.</p>
-
-    <a class="btn" href="https://t.me/pani_tarolog">Написать</a>
-
-    <p class="small">Отвечаю лично</p>
+    <a class="btn" href="https://t.me/твойдник">Записаться</a>
   </div>
 
 </div>
